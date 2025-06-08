@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 CORS(app)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'GET':
         pass
